@@ -18,7 +18,6 @@ class ascii_art:
 if __name__ == '__main__':
     art = ascii_art()
     art.draw_triangle()
-    def draw_circle():
-        pass
+
 
 
