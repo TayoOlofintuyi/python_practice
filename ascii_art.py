@@ -5,7 +5,7 @@ class ascii_art:
     def __init__(self):
         self.desc = ""
 
-    def draw_square():
+    def draw_square(self):
         print ("---------")
         print("|         |")
         print("|         |")
@@ -24,6 +24,7 @@ class ascii_art:
 if __name__ == '__main__':
     art = ascii_art()
     art.draw_triangle()
+    art.draw_square()
 
 
 
