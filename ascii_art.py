@@ -8,6 +8,8 @@ class ascii_art:
 
     def draw_triangle():
         pass
-
+        
+    def draw_circle():
+        pass
     
         
