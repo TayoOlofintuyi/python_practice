@@ -1,4 +1,5 @@
 from PIL import Image, ImageEnhance
+#import docker
 
 class imageman:
 
@@ -12,7 +13,7 @@ if __name__ == '__main__':
     img = img.resize(newsize) 
     enhancer = ImageEnhance.Brightness(img) 
     img_light = enhancer.enhance(1.8) 
-    img_light.save("images/doesthiswork.jpg")
+    img_light.save("images/hmm.jpg")
 
 
 
