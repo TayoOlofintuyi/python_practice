@@ -44,6 +44,24 @@ class drawing:
         self.mammal.forward(55)
         
 
+    def stickman(self):
+        self.mammal.setheading(360)
+        self.mammal.circle(30)
+        self.mammal.right(90)
+        self.mammal.forward(65)
+        self.mammal.right(130)
+        self.mammal.forward(70)
+        self.mammal.backward(70)
+        self.mammal.right(120)
+        self.mammal.forward(70)
+        self.mammal.backward(70)
+        self.mammal.right(63)
+        self.mammal.forward(65)
+        self.mammal.backward(65)
+        self.mammal.left(50)
+        self.mammal.right(120)
+        self.mammal.forward(65)
+
     def move(self, x: int = 0, y: int = 0):
         self.mammal.penup()
         self.mammal.goto(x,y)
@@ -52,14 +70,16 @@ class drawing:
 
 if __name__ == '__main__':
     d = drawing()
-    d.move(-50,50)
+    d.move(-170,50)
     d.triangle()
-    d.move(50,50)
+    d.move(10,50)
     d.circle(100)
-    d.move(100,70)
+    d.move(90,70)
     d.diamond()
     d.move(-50.-50)
     d.square()
+    d.move(150,95)
+    d.stickman()
     turtle.done()
     time.sleep(10)
     
