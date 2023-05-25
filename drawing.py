@@ -24,8 +24,10 @@ class drawing:
         self.mammal.forward(50)
 
     def circle(self, i: int):
-         x = int(720/i)
-         for i in range (x):
+         if(i > 90):
+            i = 50
+         x = int(360/i)
+         for j in range (x + 2):
             self.mammal.right(i)
             self.mammal.forward(i)
         
@@ -53,7 +55,7 @@ if __name__ == '__main__':
     d.move(-50,50)
     d.triangle()
     d.move(50,50)
-    d.circle(50)
+    d.circle(100)
     d.move(100,70)
     d.diamond()
     d.move(-50.-50)
