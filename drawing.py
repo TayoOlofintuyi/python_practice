@@ -16,10 +16,11 @@ class drawing:
         pass
     def square(self):
         pass
-    def circle(self):
-         for i in range (50):
-            self.mammal.right(10)
-            self.mammal.forward(10)
+    def circle(self, i: int):
+         x = int(720/i)
+         for i in range (x):
+            self.mammal.right(i)
+            self.mammal.forward(i)
         
     def diamond(self): 
         self.mammal.right(100)
@@ -45,7 +46,7 @@ if __name__ == '__main__':
     d.move(-50,50)
     d.triangle()
     d.move(50,50)
-    d.circle()
+    d.circle(50)
     d.move(100,70)
     d.diamond()
     d.move(50,-50)
