@@ -13,9 +13,16 @@ class drawing:
         self.mammal.right(120)
         self.mammal.forward(50)
         self.mammal.right(120)
-        pass
+        
     def square(self):
-        pass
+        self.mammal.forward(50)
+        self.mammal.right(90)
+        self.mammal.forward(50)
+        self.mammal.right(90)
+        self.mammal.forward(50)
+        self.mammal.right(90)
+        self.mammal.forward(50)
+        
     def circle(self):
          for i in range (50):
             self.mammal.right(10)
@@ -47,6 +54,7 @@ if __name__ == '__main__':
     d.circle()
     d.move(100,70)
     d.diamond()
+    d.move(-50.-50)
     d.square()
     turtle.done()
     time.sleep(10)
