@@ -21,10 +21,21 @@ class ascii_art:
     def draw_circle():
         pass
 
+    def draw_diamond(self):
+        print ("    *")
+        print ("  *****")
+        print (" *******")
+        print ("*********")
+        print (" *******")
+        print ("    *")
+        pass
+
+
 if __name__ == '__main__':
     art = ascii_art()
     art.draw_triangle()
     art.draw_square()
+    art.draw_diamond()
 
 
 
