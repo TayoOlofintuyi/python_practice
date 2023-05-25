@@ -1,4 +1,5 @@
 from PIL import Image, ImageEnhance
+import cv2 as cv
 #import docker
 
 class imageman:
