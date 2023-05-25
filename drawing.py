@@ -5,6 +5,5 @@ class drawing:
         pass
 
 if __name__ == '__main__':
-    t = turtle()
-    t.go(50)
-
+    t = turtle.Turtle()
+    t.forward(1000)
