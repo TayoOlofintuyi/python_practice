@@ -35,10 +35,13 @@ class drawing:
 
 if __name__ == '__main__':
     d = drawing()
+    d.move(-50,50)
     d.triangle()
     d.move(50,50)
     d.circle()
+    d.move(-50,-50)
     d.diamond()
+    d.move(50,-50)
     d.square()
     turtle.done()
     time.sleep(10)
