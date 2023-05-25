@@ -1,4 +1,5 @@
 import turtle
+import time
 
 class drawing:
     def __init__(self):
@@ -6,11 +7,20 @@ class drawing:
         pass
 
     def triangle(self):
+        self.mammal.forward(50)
+        self.mammal.right(120)
+        self.mammal.forward(50)
+        self.mammal.right(120)
+        self.mammal.forward(50)
+        self.mammal.right(120)
         pass
     def square(self):
         pass
     def circle(self):
-        pass
+         for i in range (50):
+            self.mammal.right(10)
+            self.mammal.forward(10)
+        
     def diamond(self): 
         self.mammal.right(100)
         self.mammal.forward(90)
@@ -22,9 +32,22 @@ class drawing:
         self.mammal.forward(110)
         self.mammal.left(115)
         self.mammal.forward(55)
-        pass
+        
+
+    def move(self, x: int = 0, y: int = 0):
+        self.mammal.penup()
+        self.mammal.goto(x,y)
+        self.mammal.pendown()
+
 
 if __name__ == '__main__':
     d = drawing()
+    d.triangle()
+    d.move(50,50)
+    d.circle()
+    d.move(100,70)
     d.diamond()
+    d.square()
     turtle.done()
+    time.sleep(10)
+    
